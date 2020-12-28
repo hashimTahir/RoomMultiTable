@@ -11,7 +11,7 @@ import com.hashim.roommultitable.entities.Student
 
 
 /*For one to many relations*/
-class SchoolWithStudents(
+data class SchoolWithStudents(
     @Embedded val school: School,
     @Relation(
         parentColumn = "schoolName",

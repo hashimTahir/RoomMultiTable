@@ -8,6 +8,7 @@ import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
 import com.hashim.roommultitable.entities.Student
+import com.hashim.roommultitable.entities.StudentSubjectCrossRefrence
 import com.hashim.roommultitable.entities.Subject
 
 

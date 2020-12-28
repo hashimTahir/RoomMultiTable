@@ -2,7 +2,7 @@
  * Copyright (c) 2020/  12/ 28.  Created by Hashim Tahir
  */
 
-package com.hashim.roommultitable.entities.relations
+package com.hashim.roommultitable.entities
 
 import androidx.room.Entity
 
