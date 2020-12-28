@@ -8,8 +8,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class School(
+data class Subject(
     @PrimaryKey(autoGenerate = false)
-    val schoolName: String
-) {
-}
+    val subjectName: String
+)

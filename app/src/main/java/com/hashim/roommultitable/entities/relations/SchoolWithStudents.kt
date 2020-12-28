@@ -18,5 +18,4 @@ class SchoolWithStudents(
         entityColumn = "schoolName"
     )
     val student: List<Student>
-) {
-}
+)
