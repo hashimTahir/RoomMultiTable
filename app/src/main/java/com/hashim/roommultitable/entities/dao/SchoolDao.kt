@@ -4,10 +4,9 @@
 
 package com.hashim.roommultitable.entities.dao
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
+import androidx.room.*
 import com.hashim.roommultitable.entities.Director
+import com.hashim.roommultitable.entities.relations.SchoolAndDirector
 
 @Dao
 interface SchoolDao {
@@ -18,5 +17,8 @@ interface SchoolDao {
     suspend fun hInsertDirector(director: Director)
 
 
-    suspend fun hGetSchoolAndDirectorwithSchool
+    @Transaction /*Make sure there is not multi threading issues*/
+    @Query("SELECT * FROM School WHERE schoolName = :schoolName")
+    suspend fun hGetSchoolAndDirectorwithSchoolName(schoolName: String): List<SchoolAndDirector>
+
 }
